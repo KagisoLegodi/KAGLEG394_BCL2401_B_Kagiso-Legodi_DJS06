@@ -38,3 +38,10 @@ console.log(`Count of remaining provinces: ${noCapeProvinces.length}`);
 // Find: S
 const namesWithS = names.map(name => name.toLowerCase().includes('s'));
 console.log(namesWithS);
+
+// Creating Object Mapping
+const nameProvinceMap = names.reduce((map, name, index) => {
+  map[name] = provinces[index];
+  return map;
+}, {});
+console.log(nameProvinceMap);
