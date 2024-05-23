@@ -32,3 +32,5 @@ const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the
 console.log(sortedProvinces);
 
 // filter: Cape
+const noCapeProvinces = provinces.filter(province => !province.includes('Cape'));
+console.log(`Count of remaining provinces: ${noCapeProvinces.length}`);
