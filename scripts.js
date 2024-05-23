@@ -28,4 +28,5 @@ const nameLengths = names.map(name => name.length);
 console.log(nameLengths);
 
 // sorting
- 
+const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the original
+console.log(sortedProvinces);
