@@ -34,3 +34,7 @@ console.log(sortedProvinces);
 // filter: Cape
 const noCapeProvinces = provinces.filter(province => !province.includes('Cape'));
 console.log(`Count of remaining provinces: ${noCapeProvinces.length}`);
+
+// Find: S
+const namesWithS = names.map(name => name.toLowerCase().includes('s'));
+console.log(namesWithS);
