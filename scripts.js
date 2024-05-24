@@ -29,8 +29,8 @@ const products = [
 ];
 
 // forEach basics
-console.log("\nProvinves:");
-provinces.forEach((province) => console.log('-${province}'));
+console.log("\nProvinces:");
+provinces.forEach((province) => console.log(`  - ${province}`));
 console.log("\nNames:");
 names.forEach((name) => console.log('-${name}'));
 console.log("\nNames with Provinces:");
