@@ -62,5 +62,14 @@ console.log(
 
   // combine arrays for product names
   products.reduce((str,p) => str + p.product, ""),
+
+  // find prices that are extreme
+  // Use Infinity for empty prices
+  "Highest: " + 
+    Math.max(...products.map(p => Number(p.price) || -Infinity)) + 
+    ". Lowest: " + 
+    Math.min(...products.map(p => Number(p.price) || Infinity)), 
+
   
+
 )
