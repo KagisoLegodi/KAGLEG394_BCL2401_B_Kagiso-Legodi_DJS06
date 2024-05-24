@@ -70,6 +70,8 @@ console.log(
     ". Lowest: " + 
     Math.min(...products.map(p => Number(p.price) || Infinity)), 
 
-  
-
-)
+   // Transformation Object 
+   Object.fromEntries(
+    Object.entries(products).map(([key, { product, price }]) => [key, { name: product, cost: price }])
+  )
+);
