@@ -47,8 +47,9 @@ const nameLengths = names.map((name) => name.length);
 console.log(`  - ${nameLengths.join(", ")}`);
 
 // sorting
+console.log("\nSorted Provinces:");
 const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the original
-console.log(sortedProvinces);
+console.log(`  - ${sortedProvinces.join(", ")}`);
 
 // filter: Cape
 const noCapeProvinces = provinces.filter(
