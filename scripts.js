@@ -59,4 +59,8 @@ console.log(
   "Total price:" + products
   .filter(p => p.price && !isNaN(p.price))
   .reduce((sum,p) => sum + Number(p.price),0),
+
+  // combine arrays for product names
+  products.reduce((str,p) => str + p.product, ""),
+  
 )
