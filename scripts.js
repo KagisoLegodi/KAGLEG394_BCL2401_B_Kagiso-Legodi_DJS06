@@ -29,9 +29,12 @@ const products = [
 ];
 
 // forEach basics
-provinces.forEach((province) => console.log(province));
-names.forEach((name) => console.log(name));
-names.forEach((name, index) => console.log(`${name} (${provinces[index]})`));
+console.log("\nProvinves:");
+provinces.forEach((province) => console.log('-${province}'));
+console.log("\nNames:");
+names.forEach((name) => console.log('-${name}'));
+console.log("\nNames with Provinces:");
+names.forEach((name, index) => console.log(`-${name} (${provinces[index]})`));
 
 // transform to UPPERCASE
 const uppercaseProvinces = provinces.map((province) => province.toUpperCase());
