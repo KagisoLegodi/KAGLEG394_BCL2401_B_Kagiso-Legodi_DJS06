@@ -63,10 +63,9 @@ console.log(namesWithS);
 
 // Creating Object Mapping
 const nameProvinceMap = names.reduce((map, name, index) => {
-  map[name] = provinces[index];
+  map[name] = provinces[index] || "Unknown";
   return map;
 }, {});
-console.log(nameProvinceMap);
 
 // advanced exercises
 
