@@ -58,6 +58,7 @@ const noCapeProvinces = provinces.filter(
 console.log(`Count of remaining provinces: ${noCapeProvinces.length}`);
 
 // Find: S
+console.log("\nNames with 'S':")
 const hasS = names.map((name) => {
   return name
     .split("")
@@ -66,6 +67,7 @@ const hasS = names.map((name) => {
 console.log(hasS);
 
 // Creating Object Mapping
+console.log('')
 const nameProvinceMap = names.reduce((map, name, index) => {
   map[name] = provinces[index] || "Unknown";
   return map;
