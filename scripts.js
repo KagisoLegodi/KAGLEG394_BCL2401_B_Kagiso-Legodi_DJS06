@@ -45,3 +45,15 @@ const nameProvinceMap = names.reduce((map, name, index) => {
   return map;
 }, {});
 console.log(nameProvinceMap);
+
+// advanced exercises 
+
+console.log(
+  // logging products
+  products.map(p => p.product.length <= 5),
+
+  // filter name lengths
+  products.filter(p => p.product.length <= 5),
+
+
+)
