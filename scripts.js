@@ -32,14 +32,14 @@ const products = [
 console.log("\nProvinces:");
 provinces.forEach((province) => console.log(`  - ${province}`));
 console.log("\nNames:");
-names.forEach((name) => console.log(`  - ${name}`)); 
+names.forEach((name) => console.log(`  - ${name}`));
 console.log("\nNames with Provinces:");
 names.forEach((name, index) => console.log(`-${name} (${provinces[index]})`));
 
 // transform to UPPERCASE
 console.log("\nUppercase Provinces:");
 const uppercaseProvinces = provinces.map((province) => province.toUpperCase());
-console.log(`  - ${uppercaseProvinces.join(", ")}`); 
+console.log(`  - ${uppercaseProvinces.join(", ")}`);
 
 // name length
 console.log("\nName Lengths:");
@@ -58,8 +58,12 @@ const noCapeProvinces = provinces.filter(
 console.log(`Count of remaining provinces: ${noCapeProvinces.length}`);
 
 // Find: S
-const namesWithS = names.map((name) => name.toLowerCase().includes("s"));
-console.log(namesWithS);
+const hasS = names.map((name) => {
+  return name
+    .split("")
+    .some((letter) => letter === "S");
+});
+console.log(hasS);
 
 // Creating Object Mapping
 const nameProvinceMap = names.reduce((map, name, index) => {
