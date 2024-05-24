@@ -32,7 +32,7 @@ const products = [
 console.log("\nProvinces:");
 provinces.forEach((province) => console.log(`  - ${province}`));
 console.log("\nNames:");
-names.forEach((name) => console.log('-${name}'));
+names.forEach((name) => console.log(`  - ${name}`)); 
 console.log("\nNames with Provinces:");
 names.forEach((name, index) => console.log(`-${name} (${provinces[index]})`));
 
