@@ -42,8 +42,9 @@ const uppercaseProvinces = provinces.map((province) => province.toUpperCase());
 console.log(`  - ${uppercaseProvinces.join(", ")}`); 
 
 // name length
+console.log("\nName Lengths:");
 const nameLengths = names.map((name) => name.length);
-console.log(nameLengths);
+console.log(`  - ${nameLengths.join(", ")}`);
 
 // sorting
 const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the original
